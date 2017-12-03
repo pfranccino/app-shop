@@ -77,7 +77,7 @@
           <a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
                   </div>
               </div>
-      @endforeach
+         @endforeach
     </div>
   </div>
 
