@@ -11,7 +11,7 @@
                 {{ csrf_field() }}
               <div class="header header-primary text-center">
                 <h4>Iniciar sesion</h4>
-                <div class="social-line">
+                <!-- <div class="social-line">
                   <a href="#pablo" class="btn btn-simple btn-just-icon">
                     <i class="fa fa-facebook-square"></i>
                   </a>
@@ -21,7 +21,7 @@
                   <a href="#pablo" class="btn btn-simple btn-just-icon">
                     <i class="fa fa-google-plus"></i>
                   </a>
-                </div>
+                </div> -->
               </div>
               <p class="text-divider">Ingresar datos</p>
               <div class="content">
@@ -60,11 +60,11 @@
     </div>
 
     <footer class="footer">
-          <div class="container">
-              <nav class="pull-left">
-          <ul>
-            <li>
-              <a href="http://www.creative-tim.com">
+      <div class="container">
+      <nav class="pull-left">
+      <ul>
+      <li>
+      <a href="http://www.creative-tim.com">
                 Creative Tim
               </a>
             </li>
@@ -76,7 +76,7 @@
             <li>
               <a href="http://blog.creative-tim.com">
                  Blog
-              </a>
+         </a>
             </li>
             <li>
               <a href="http://www.creative-tim.com/license">
