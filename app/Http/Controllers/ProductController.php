@@ -10,7 +10,7 @@ class ProductController extends Controller
 
     public function welcome()
     {
-        $products = Product::all();
+        $products = Product::paginate(12);
         return view('welcome')->with(compact('products'));
 
 
