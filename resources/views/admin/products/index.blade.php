@@ -12,7 +12,7 @@
       <h2 class="title">Productos disponible</h2>
     <div class="team">
     <div class="row">
-      <a href="{{url('/admin/products/create')}}"class="btn btn-primary btn-round">Nuevo Producto</a>
+      <a href="{{route('create')}}"class="btn btn-primary btn-round">Nuevo Producto</a>
       <table class="table">
         <thead>
             <tr>
@@ -36,9 +36,9 @@
                     <button type="button" rel="tooltip" title="Ver" class="btn btn-info btn-simple btn-xs">
                         <i class="fa fa-info"></i>
                     </button>
-                    <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs">
+                    <a href="{{route('edit',['id'=>$product->id])}}" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs">
                         <i class="fa fa-edit"></i>
-                    </button>
+                    </a>
                     <button type="button" rel="tooltip" title="Eliminar" class="btn btn-danger btn-simple btn-xs">
                         <i class="fa fa-times"></i>
                     </button>

@@ -11,34 +11,35 @@
 
 
     <div class="section ">
-          <h2 class="title text-center">Crear producto</h2>
- <form action="{{route('store')}}" method="post">
+          <h2 class="title text-center">Edicion de producto</h2>
+
+          <form action="{{route('update',['id'=>$products->id])}}" method="post">
       {{csrf_field() }}
       <div class="row">
         <div class="col-sm-6">
       	<div class="form-group label-floating">
       		<label class="control-label">Nombre del producto</label>
-      		<input type="text" class="form-control" name="name">
+      		<input type="text" class="form-control" name="name" value="{{$products->name}}">
            </div>
            </div>
 
           <div class="col-sm-6">
             <div class="form-group label-floating">
              <label class="control-label">Precio del producto</label>
-             <input type="number" class="form-control" name="price">
+             <input type="number"  step="0.01" class="form-control" name="price" value="{{$products->price}}">
            </div>
           </div>
           </div>
       <div class="form-group label-floating">
-        <label class="control-label">Descripcion corta</label>
-        <input type="text" class="form-control" name="description">
-      </div>
-      <div class="form-group label-floating">
+          <label class="control-label">Descripcion corta</label>
+          <input type="text" class="form-control" name="description" value="{{$products->description}}">
+        </div>
+        <div class="form-group label-floating">
       <label class="control-label">Descripcion extensa</label>
       <textarea class="form-control"  rows="5"
-       name="long_description"></textarea>
+       name="long_description">{{$products->long_description}}</textarea>
      </div>
-       <button class="btn btn-primary">Registrar Producto</button>
+       <button class="btn btn-primary">Editar producto</button>
 
 
  </form>
